@@ -1,0 +1,24 @@
+
+
+post http://localhost:3000/user/signup
+Content-Type: application/json
+
+{
+    "email": "diaz@gmail.com",
+    "password" : "7777"
+}
+
+
+### Find by email
+post http://localhost:3000/user/findemail
+Content-Type: application/json
+
+{
+     "email": "diaz@gmail.comx"
+}
+
+
+
+### Clear everythingin database
+
+DELETE http://localhost:3000/user/clear
