@@ -16,6 +16,12 @@ export class UserService {
     return user;
   }
 
+  async findAll() {
+    const user =  await this.repo.find()
+    return user
+  }
+
+
   async deleteAllUsers() {
     await this.repo.clear();
   }

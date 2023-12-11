@@ -1,10 +1,20 @@
-
+#  sign up
 
 post http://localhost:3000/user/signup
 Content-Type: application/json
 
 {
-    "email": "diaz@gmail.com",
+    "email": "nutlovekoon@gmail.com",
+    "password" : "7777"
+}
+
+### sign in 
+
+post http://localhost:3000/user/signin
+Content-Type: application/json
+
+{
+    "email": "nutlovekoon@gmail.com",
     "password" : "7777"
 }
 
@@ -14,9 +24,11 @@ post http://localhost:3000/user/findemail
 Content-Type: application/json
 
 {
-     "email": "diaz@gmail.comx"
+     "email": "nutlovekoon@gmail.com"
 }
 
+### Find all user
+get http://localhost:3000/user/alluser
 
 
 ### Clear everythingin database
